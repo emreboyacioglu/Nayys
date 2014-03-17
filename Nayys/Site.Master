@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Nayys.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' />
+    <link rel='stylesheet' type='text/css' href='Style/menu/styles.css' />
+    <link href="Style/anasayfa_div/styles.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+    <script type='text/javascript' src="Style/menu/menu_jquery.js"></script>
+</head>
+<body>
+    <div id='cssmenu' style="position: static;">
+        <ul>
+            <li><a href='Anasayfa.aspx'><span>Anasayfa</span></a></li>
+            <li class='has-sub'><a href='#'><span>Kategoriler</span></a>
+                <ul>
+                    <li><a href='#'><span>Eğlence</span></a></li>
+                    <li><a href='#'><span>Lezzetler</span></a></li>
+                    <li><a href='#'><span>Hayvanlar</span></a></li>
+                    <li><a href='#'><span>Gezilesi</span></a></li>
+                    <li class='last'><a href='#'><span>Burçlar</span></a></li>
+                </ul>
+            </li>
+            <li><a href='#'><span>Popüler</span></a></li>
+            <li class='last'><a href='#'><span>Yeni Eklenenler</span></a></li>
+        </ul>
+    </div>
+    <br />
+    <div class="divLeft">
+        <asp:ContentPlaceHolder runat="server" ID="contentLeft" />
+    </div>
+    <div class="divRight">
+        <asp:ContentPlaceHolder runat="server" ID="contentRight" />
+    </div>
+</body>
+</html>

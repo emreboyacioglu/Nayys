@@ -1,0 +1,16 @@
+.divLeft
+{
+    display: block;
+	float: left; 
+	height:auto;
+	width:790px;
+	background-color:Blue;
+}
+.divRight
+{
+    display: block;
+	float: right;
+	width: 230px;
+	height:auto;
+	background-color:Maroon;
+}
