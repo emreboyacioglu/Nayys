@@ -2,8 +2,56 @@
     CodeBehind="Anasayfa.aspx.cs" Inherits="Nayys.Anasayfa" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="contentUp" runat="server">
+    <script type="text/javascript">
+        $(window).load(function () {
+            $(document).ready(function () {
+                collage();
+                $('.Collage').collageCaption();
+            });
+        });
 
 
+        // Here we apply the actual CollagePlus plugin
+        function collage() {
+            $('.Collage').removeWhitespace().collagePlus(
+            {
+                'fadeSpeed': 2000,
+                'targetHeight': 200
+            }
+        );
+        };
+
+        // This is just for the case that the browser window is resized
+        var resizeTimer = null;
+        $(window).bind('resize', function () {
+            // hide all the images until we resize them
+            $('.Collage .Image_Wrapper').css("opacity", 0);
+            // set a timer to re-apply the plugin
+            if (resizeTimer) clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(collage, 200);
+        });
+
+    </script>
+    <section class="Collage effect-parent">
+        <div class="Image_Wrapper" data-caption="arrrmut">
+            <img src="fotolar/images.jpg"  />
+        </div>
+                <div class="Image_Wrapper" data-caption="">
+            <img src="fotolar/indir (1).jpg"  />
+        </div>
+                <div class="Image_Wrapper" >
+            <img src="fotolar/indir (2).jpg"  />
+        </div>
+                <div class="Image_Wrapper" data-caption="ayşe">
+            <img src="fotolar/indir.jpg"  />
+        </div>
+                <div class="Image_Wrapper" data-caption="Kiraz">
+            <img src="fotolar/kiraz1.jpg"  />
+        </div>
+                <div class="Image_Wrapper"  data-caption="Kiraz">
+            <img src="fotolar/kiraz1.jpg" height="200" />
+        </div>
+    </section>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="contentLeft" runat="server">
 </asp:Content>
