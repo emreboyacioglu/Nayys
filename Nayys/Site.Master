@@ -9,8 +9,13 @@
     <link href="Style/anasayfa_div/styles.css" type="text/css" rel="stylesheet" />
     <script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
     <script type='text/javascript' src="Style/menu/menu_jquery.js"></script>
+    <script src="../jquery.collagePlus.js"></script>
+    <script src="../extras/jquery.removeWhitespace.js"></script>
+    <script src="../extras/jquery.collageCaption.js"></script>
 </head>
 <body>
+    <br />
+    <br />
     <div id='cssmenu' style="position: static;">
         <ul>
             <li><a href='Anasayfa.aspx'><span>Anasayfa</span></a></li>
@@ -28,10 +33,14 @@
         </ul>
     </div>
     <br />
-    <div class="divLeft">
+    <br />
+    <div class="divCollage"> <!-- AnaSayfadaki collage yapı için -->
+        <asp:ContentPlaceHolder runat="server" ID="contentUp" />
+    </div>
+    <div class="divLeft"> <!-- sol bölüm-->
         <asp:ContentPlaceHolder runat="server" ID="contentLeft" />
     </div>
-    <div class="divRight">
+    <div class="divRight"><!-- sag bölüm -->
         <asp:ContentPlaceHolder runat="server" ID="contentRight" />
     </div>
 </body>
