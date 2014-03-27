@@ -25,7 +25,7 @@
 <body style="background-image: url('Style/MasterPage/photography.png'); overflow: scroll;">
     <div id='cssmenu'>
         <ul>
-            <li class="logo"></li>
+            <li class="logo"></li><!--LOGO bölümü-->
             <li style="margin-left:30%"><a href='Anasayfa.aspx'><span>Anasayfa</span></a></li>
             <li class='has-sub'><a href='#'><span>Galeriler</span></a>
                 <ul>

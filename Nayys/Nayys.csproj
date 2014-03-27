@@ -84,6 +84,7 @@
     <Content Include="Style\anasayfa_div\styles.css" />
     <Content Include="Style\MasterPage\giftly.png" />
     <Content Include="Style\MasterPage\photography.png" />
+    <Content Include="Style\MasterPage\shattered.png" />
     <Content Include="Style\MasterPage\skulls.png" />
     <Content Include="Style\menu\menu_jquery.js" />
     <Content Include="Style\menu\styles.css" />
