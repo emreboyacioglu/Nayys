@@ -83,6 +83,8 @@
     <Content Include="fotolar\kiraz1.jpg" />
     <Content Include="Style\anasayfa_div\styles.css" />
     <Content Include="Style\MasterPage\giftly.png" />
+    <Content Include="Style\MasterPage\gplaypattern.png" />
+    <Content Include="Style\MasterPage\hexellence.png" />
     <Content Include="Style\MasterPage\photography.png" />
     <Content Include="Style\MasterPage\shattered.png" />
     <Content Include="Style\MasterPage\skulls.png" />
