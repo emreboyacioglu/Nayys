@@ -18,15 +18,24 @@
 
     /* define how much padding you want in between your images */
     padding:10px;
-
+    margin:30px;
+    position:inherit;
+    
     }
 
 .Collage img{
 
     /* ensures padding at the bottom of the image is correct */
     vertical-align:bottom;
-
+    
     /* hide the images until the plugin has run. the plugin will reveal the images*/
     opacity:0;
+
+    }
+    .Collage div img{
+
+    /* ensures padding at the bottom of the image is correct */
+    vertical-align:middle;
+    /* hide the images until the plugin has run. the plugin will reveal the images*/
 
     }

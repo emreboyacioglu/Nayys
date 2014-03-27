@@ -1,13 +1,19 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
 #cssmenu {
   background: #228799;
-  margin:10px;
-  width: auto;
+  margin:0px;
+  width:100%;
   padding: 0;
   line-height: 1;
   display: block;
-  position: relative;
+  position: fixed;
   font-family: 'PT Sans';
+  z-index:100;
+ 
+}
+.logo
+{
+    background-color:Silver;
 }
 #cssmenu ul {
   list-style: none;
@@ -85,7 +91,7 @@
   color: #000000;
   letter-spacing: 0;
   display: block;
-  width: 125px;
+  width: 104px;
   padding: 11px 10px 11px 20px;
 }
 #cssmenu ul li ul li:hover > a,
