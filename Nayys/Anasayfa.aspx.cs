@@ -11,7 +11,8 @@ namespace Nayys
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Galery a = new Galery();
+            
         }
     }
 }

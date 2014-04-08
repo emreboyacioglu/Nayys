@@ -33,8 +33,7 @@
         });
 
     </script>
-
-        <section class="Collage effect-parent">
+    <section class="Collage effect-parent">
         <div class="Image_Wrapper" data-caption="arrrmut">
             <img src="fotolar/1.jpg"  />
         </div>
@@ -54,7 +53,6 @@
             <img src="fotolar/images.jpg" />
         </div>
     </section>
-
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="contentLeft" runat="server">
 </asp:Content>
