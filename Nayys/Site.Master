@@ -22,11 +22,11 @@
     <script src="CollagePlus/extras/jquery.removeWhitespace.min.js"></script>
     <script src="CollagePlus/extras/jquery.collageCaption.min.js"></script>
 </head>
-<body style="background-image: url('Style/MasterPage/photography.png'); overflow: scroll;">
+<body style="background-image: url('Style/MasterPage/skulls.png'); overflow: scroll;">
     <div id='cssmenu'>
         <ul>
-            <li class="logo"></li><!--LOGO bölümü-->
-            <li style="margin-left:30%"><a href='Anasayfa.aspx'><span>Anasayfa</span></a></li>
+        <img src="logo.gif" height="35" style="float:left;margin-left:5px;margin-top:5px;"/><!--LOGO bölümü-->
+            <li style="margin-left:20%"><a href='Anasayfa.aspx'><span>Anasayfa</span></a></li>
             <li class='has-sub'><a href='#'><span>Galeriler</span></a>
                 <ul>
                     <li><a href='#'><span>Eğlence</span></a></li>
@@ -42,7 +42,7 @@
     </div>
     <br />
     <br />
-    <div class="divCollage" style="position: inherit;">
+    <div class="divCollage" >
         <!-- AnaSayfadaki collage yapı için -->
         <asp:ContentPlaceHolder runat="server" ID="contentUp" />
     </div>

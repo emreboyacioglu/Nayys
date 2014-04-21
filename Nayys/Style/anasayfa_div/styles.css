@@ -1,5 +1,10 @@
+.logo
+{
+    float:left;
+}
 .divLeft
 {
+    margin-left:40px;
     display: block;
 	float: left; 
 	height:auto;
@@ -8,9 +13,10 @@
 }
 .divRight
 {
+    margin-right:40px;
     display: block;
 	float: right;
-	width: 230px;
+	width: 400px;
 	height:auto;
 	background-color:Maroon;
 }

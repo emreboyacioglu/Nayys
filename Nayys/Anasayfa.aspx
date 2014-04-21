@@ -16,7 +16,8 @@
             $('.Collage').removeWhitespace().collagePlus(
             {
                 'fadeSpeed': 2000,
-                'targetHeight': 400,
+                'targetHeight': 200,
+                'direction': 'vertical'
 
             }
         );
@@ -33,28 +34,33 @@
         });
 
     </script>
-    <section class="Collage effect-parent">
+    <div class="Collage effect-parent" style="display: inherit;">
         <div class="Image_Wrapper" data-caption="arrrmut">
-            <img src="fotolar/1.jpg"  />
+            <img src="fotolar/1.jpg" />
         </div>
-          <div class="Image_Wrapper" data-caption="">
-            <img src="fotolar/2.jpg"  />
+        <div class="Image_Wrapper" data-caption="">
+            <img src="fotolar/2.jpg" />
         </div>
-            <div class="Image_Wrapper" >
-            <img src="fotolar/3.jpg"  />
+        <div class="Image_Wrapper">
+            <img src="fotolar/3.jpg" />
         </div>
-          <div class="Image_Wrapper" data-caption="ayşe">
-            <img src="fotolar/4.jpg"  />
+        <div class="Image_Wrapper" data-caption="ayşe">
+            <img src="fotolar/4.jpg" />
         </div>
-          <div class="Image_Wrapper" data-caption="Kiraz">
-            <img src="fotolar/5.jpg"  />
+        <div class="Image_Wrapper" data-caption="Kiraz">
+            <img src="fotolar/5.jpg" />
         </div>
-         <div class="Image_Wrapper"  data-caption="Kiraz">
+        <div class="Image_Wrapper" data-caption="Kiraz">
             <img src="fotolar/images.jpg" />
         </div>
-    </section>
+        <div class="Image_Wrapper" data-caption="Kiraz">
+            <img src="fotolar/images.jpg" />
+        </div>
+    </div>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="contentLeft" runat="server">
+    test1
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="contentRight" runat="server">
+    test2
 </asp:Content>

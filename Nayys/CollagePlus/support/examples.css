@@ -83,17 +83,13 @@ a.return:hover{
 .Collage{
 
     /*This is where you set the padding you want between the images*/
-    padding:10px;--
---
-
+    padding:10px;
+    
 }
 .Collage img{
     margin:0;
     padding:0;
-    display:inline-block;
-    vertical-align:bottom;
     opacity:1;
-
     /*This is where you set the border you want for the image*/
     border:6px solid #FFF;
 }
