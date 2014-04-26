@@ -1,3 +1,9 @@
+ .body
+ {
+     background-image: url('/style/MasterPage/skulls.png');
+     margin:0px;
+     overflow:scroll;
+ }
 .logo
 {
     float:left;
@@ -20,28 +26,58 @@
 	height:auto;
 	background-color:Maroon;
 }
-.Collage{
-
-    /* define how much padding you want in between your images */
+#imgGallery
+{
+    
+    width:1000px;
+    height:505px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20px;
+}
+#container
+{
+    border-radius:10px;
     padding:10px;
-    margin:30px;
-    position:inherit;
-    
-    }
+    background-color:White;
+    float:left;
+    display:block;
+}
+#mainGrid
+{
+    width:400px;
+    height:505px;
+    background-color:Aqua;
+    display:inline-block;
+}
 
-.Collage img{
-
-    /* ensures padding at the bottom of the image is correct */
-    vertical-align:bottom;
-    
-    /* hide the images until the plugin has run. the plugin will reveal the images*/
-    opacity:0;
-
-    }
-    .Collage div img{
-
-    /* ensures padding at the bottom of the image is correct */
-    vertical-align:middle;
-    /* hide the images until the plugin has run. the plugin will reveal the images*/
-
-    }
+#secondGrid
+{
+    width:350px;
+    height:505px;
+    background-color:Lime;
+    display:inline-block;
+}
+#thirdGrid
+{
+    width:220px;
+    background-color:Yellow;
+    display:inline-block;
+}
+#upgrid
+{
+    width:220px;
+    height:250px;
+    background-color:Green;
+    display:inline-block;
+    position:relative;
+}
+#downgrid
+{
+    width:220px;
+    height:250px;
+    background-color:Maroon;
+    margin-top:5px;
+    display:inline-block;
+    position:absolute;
+}
