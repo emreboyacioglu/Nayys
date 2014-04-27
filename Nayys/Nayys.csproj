@@ -62,25 +62,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Anasayfa.aspx" />
-    <Content Include="CollagePlus\css\transitions.css" />
-    <Content Include="CollagePlus\extras\jquery.collageCaption.js" />
-    <Content Include="CollagePlus\extras\jquery.collageCaption.min.js" />
-    <Content Include="CollagePlus\extras\jquery.removeWhitespace.js" />
-    <Content Include="CollagePlus\extras\jquery.removeWhitespace.min.js" />
-    <Content Include="CollagePlus\jquery.collagePlus.js" />
-    <Content Include="CollagePlus\jquery.collagePlus.min.js" />
-    <Content Include="CollagePlus\support\examples.css" />
-    <Content Include="CollagePlus\support\images\0.2.0-preview.png" />
-    <Content Include="CollagePlus\support\images\ed-lea-dribbble-1.png" />
-    <Content Include="CollagePlus\support\images\ed-lea-dribbble-10.jpg" />
-    <Content Include="CollagePlus\support\images\ed-lea-dribbble-2.png" />
-    <Content Include="CollagePlus\support\images\ed-lea-dribbble-3.png" />
-    <Content Include="CollagePlus\support\images\ed-lea-dribbble-4.png" />
-    <Content Include="CollagePlus\support\images\ed-lea-dribbble-5.png" />
-    <Content Include="CollagePlus\support\images\ed-lea-dribbble-6.png" />
-    <Content Include="CollagePlus\support\images\ed-lea-dribbble-7.png" />
-    <Content Include="CollagePlus\support\images\ed-lea-dribbble-8.png" />
-    <Content Include="CollagePlus\support\images\ed-lea-dribbble-9.png" />
     <Content Include="fotolar\1.jpg" />
     <Content Include="fotolar\2.jpg" />
     <Content Include="logo.gif" />
@@ -92,6 +73,7 @@
     <Content Include="fotolar\indir %282%29.jpg" />
     <Content Include="fotolar\indir.jpg" />
     <Content Include="fotolar\kiraz1.jpg" />
+    <Content Include="Style\anasayfa_div\imgLiquid-min.js" />
     <Content Include="Style\anasayfa_div\styles.css" />
     <Content Include="Style\MasterPage\giftly.png" />
     <Content Include="Style\MasterPage\gplaypattern.png" />
@@ -172,10 +154,6 @@
     <Content Include="Site.Master" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="CollagePlus\.gitignore" />
-    <None Include="CollagePlus\collageplus.jquery.json" />
-    <None Include="CollagePlus\README.md" />
-    <None Include="CollagePlus\support\.DS_Store" />
     <EntityDeploy Include="model.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>model.Designer.cs</LastGenOutput>

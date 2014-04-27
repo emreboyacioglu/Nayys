@@ -8,31 +8,13 @@
 {
     float:left;
 }
-.divLeft
-{
-    margin-left:40px;
-    display: block;
-	float: left; 
-	height:auto;
-	width:790px;
-	background-color:Blue;
-}
-.divRight
-{
-    margin-right:40px;
-    display: block;
-	float: right;
-	width: 400px;
-	height:auto;
-	background-color:Maroon;
-}
 #imgGallery
 {
     
-    width:1000px;
+    width:1200px;
     height:505px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right:auto;
     margin-top:20px;
 }
 #container
@@ -45,39 +27,39 @@
 }
 #mainGrid
 {
-    width:400px;
-    height:505px;
+    max-width:450px;
+    max-height:505px;
     background-color:Aqua;
     display:inline-block;
 }
 
 #secondGrid
 {
-    width:350px;
-    height:505px;
+    max-width:350px;
+    max-height:505px;
     background-color:Lime;
     display:inline-block;
 }
 #thirdGrid
 {
-    width:220px;
-    background-color:Yellow;
+    max-width:220px;
     display:inline-block;
 }
 #upgrid
 {
-    width:220px;
-    height:250px;
+    max-width:220px;
+    max-height:240px;
     background-color:Green;
     display:inline-block;
     position:relative;
+    padding-bottom:10px;
 }
 #downgrid
 {
-    width:220px;
-    height:250px;
+    max-width:220px;
+    max-height:240px;
     background-color:Maroon;
     margin-top:5px;
     display:inline-block;
-    position:absolute;
+    position:relative;
 }
