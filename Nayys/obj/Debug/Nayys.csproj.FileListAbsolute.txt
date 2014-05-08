@@ -1,0 +1,8 @@
+D:\Nayys.git\trunk\Nayys\bin\Nayys.dll
+D:\Nayys.git\trunk\Nayys\bin\Nayys.pdb
+D:\Nayys.git\trunk\Nayys\bin\EntityFramework.dll
+D:\Nayys.git\trunk\Nayys\bin\EntityFramework.SqlServer.dll
+D:\Nayys.git\trunk\Nayys\bin\EntityFramework.xml
+D:\Nayys.git\trunk\Nayys\bin\EntityFramework.SqlServer.xml
+D:\Nayys.git\trunk\Nayys\obj\Debug\Nayys.dll
+D:\Nayys.git\trunk\Nayys\obj\Debug\Nayys.pdb
