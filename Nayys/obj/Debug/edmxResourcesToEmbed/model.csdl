@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NayysModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="NayysEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ADVERTISEMENT" EntityType="NayysModel.ADVERTISEMENT" />
+    <EntitySet Name="CATEGORY" EntityType="NayysModel.CATEGORY" />
+    <EntitySet Name="CATEGORYTYPE" EntityType="NayysModel.CATEGORYTYPE" />
+    <EntitySet Name="GALERY" EntityType="NayysModel.GALERY" />
+    <EntitySet Name="GALERYHASHTAGS" EntityType="NayysModel.GALERYHASHTAGS" />
+    <EntitySet Name="PICTURE" EntityType="NayysModel.PICTURE" />
+    <EntitySet Name="PICTUREHASHTAGS" EntityType="NayysModel.PICTUREHASHTAGS" />
+    <EntitySet Name="ROLES" EntityType="NayysModel.ROLES" />
+    <EntitySet Name="sysdiagrams" EntityType="NayysModel.sysdiagrams" />
+    <EntitySet Name="USERS" EntityType="NayysModel.USERS" />
+    <AssociationSet Name="FK_ADVERTISEMENT_GALERY" Association="NayysModel.FK_ADVERTISEMENT_GALERY">
+      <End Role="GALERY" EntitySet="GALERY" />
+      <End Role="ADVERTISEMENT" EntitySet="ADVERTISEMENT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CATEGORY_CATEGORYTYPE" Association="NayysModel.FK_CATEGORY_CATEGORYTYPE">
+      <End Role="CATEGORYTYPE" EntitySet="CATEGORYTYPE" />
+      <End Role="CATEGORY" EntitySet="CATEGORY" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GALERY_CATEGORY" Association="NayysModel.FK_GALERY_CATEGORY">
+      <End Role="CATEGORY" EntitySet="CATEGORY" />
+      <End Role="GALERY" EntitySet="GALERY" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GALERYHASHTAGS_GALERY" Association="NayysModel.FK_GALERYHASHTAGS_GALERY">
+      <End Role="GALERY" EntitySet="GALERY" />
+      <End Role="GALERYHASHTAGS" EntitySet="GALERYHASHTAGS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PICTURE_GALERY" Association="NayysModel.FK_PICTURE_GALERY">
+      <End Role="GALERY" EntitySet="GALERY" />
+      <End Role="PICTURE" EntitySet="PICTURE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HASHTAGS_PICTURE" Association="NayysModel.FK_HASHTAGS_PICTURE">
+      <End Role="PICTURE" EntitySet="PICTURE" />
+      <End Role="PICTUREHASHTAGS" EntitySet="PICTUREHASHTAGS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_USERS_ROLES" Association="NayysModel.FK_USERS_ROLES">
+      <End Role="ROLES" EntitySet="ROLES" />
+      <End Role="USERS" EntitySet="USERS" />
+    </AssociationSet>
+    <EntitySet Name="ADVERTISEMENTTYPE" EntityType="NayysModel.ADVERTISEMENTTYPE" />
+    <AssociationSet Name="FK_ADVERTISEMENT_ADVERTISEMENTTYPE" Association="NayysModel.FK_ADVERTISEMENT_ADVERTISEMENTTYPE">
+      <End Role="ADVERTISEMENTTYPE" EntitySet="ADVERTISEMENTTYPE" />
+      <End Role="ADVERTISEMENT" EntitySet="ADVERTISEMENT" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ADVERTISEMENT">
+    <Key>
+      <PropertyRef Name="ADVERTISEMENTID" />
+    </Key>
+    <Property Name="ADVERTISEMENTID" Type="Int32" Nullable="false" />
+    <Property Name="GALERYID" Type="Int32" />
+    <Property Name="SOURCE" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="GALERY" Relationship="NayysModel.FK_ADVERTISEMENT_GALERY" FromRole="ADVERTISEMENT" ToRole="GALERY" />
+    <NavigationProperty Name="ADVERTISEMENTTYPE" Relationship="NayysModel.FK_ADVERTISEMENT_ADVERTISEMENTTYPE" FromRole="ADVERTISEMENT" ToRole="ADVERTISEMENTTYPE" />
+  </EntityType>
+  <EntityType Name="CATEGORY">
+    <Key>
+      <PropertyRef Name="CATEGORYID" />
+    </Key>
+    <Property Name="CATEGORYID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CATEGORYNAME" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CATEGORYTYPEID" Type="Int32" />
+    <NavigationProperty Name="CATEGORYTYPE" Relationship="NayysModel.FK_CATEGORY_CATEGORYTYPE" FromRole="CATEGORY" ToRole="CATEGORYTYPE" />
+    <NavigationProperty Name="GALERY" Relationship="NayysModel.FK_GALERY_CATEGORY" FromRole="CATEGORY" ToRole="GALERY" />
+  </EntityType>
+  <EntityType Name="CATEGORYTYPE">
+    <Key>
+      <PropertyRef Name="CATEGORYTYPEID" />
+    </Key>
+    <Property Name="CATEGORYTYPEID" Type="Int32" Nullable="false" />
+    <Property Name="CATEGORYTYPENAME" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="CATEGORY" Relationship="NayysModel.FK_CATEGORY_CATEGORYTYPE" FromRole="CATEGORYTYPE" ToRole="CATEGORY" />
+  </EntityType>
+  <EntityType Name="GALERY">
+    <Key>
+      <PropertyRef Name="GALERYID" />
+    </Key>
+    <Property Name="GALERYID" Type="Int32" Nullable="false" />
+    <Property Name="CATEGORYID" Type="Int32" />
+    <Property Name="GALERYNAME" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="PEOPLELIKECOUNT" Type="Int32" />
+    <Property Name="THUMBNAIL" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CREATEDATE" Type="DateTime" />
+    <NavigationProperty Name="ADVERTISEMENT" Relationship="NayysModel.FK_ADVERTISEMENT_GALERY" FromRole="GALERY" ToRole="ADVERTISEMENT" />
+    <NavigationProperty Name="CATEGORY" Relationship="NayysModel.FK_GALERY_CATEGORY" FromRole="GALERY" ToRole="CATEGORY" />
+    <NavigationProperty Name="GALERYHASHTAGS" Relationship="NayysModel.FK_GALERYHASHTAGS_GALERY" FromRole="GALERY" ToRole="GALERYHASHTAGS" />
+    <NavigationProperty Name="PICTURE" Relationship="NayysModel.FK_PICTURE_GALERY" FromRole="GALERY" ToRole="PICTURE" />
+  </EntityType>
+  <EntityType Name="GALERYHASHTAGS">
+    <Key>
+      <PropertyRef Name="GALERYID" />
+      <PropertyRef Name="HASHTAG" />
+    </Key>
+    <Property Name="GALERYID" Type="Int32" Nullable="false" />
+    <Property Name="HASHTAG" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="GALERY" Relationship="NayysModel.FK_GALERYHASHTAGS_GALERY" FromRole="GALERYHASHTAGS" ToRole="GALERY" />
+  </EntityType>
+  <EntityType Name="PICTURE">
+    <Key>
+      <PropertyRef Name="PICTUREID" />
+    </Key>
+    <Property Name="PICTUREID" Type="Guid" Nullable="false" />
+    <Property Name="GALERYID" Type="Int32" />
+    <Property Name="PATH" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="SOURCELINK" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="SUBJECT" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CREATEDATE" Type="DateTime" />
+    <NavigationProperty Name="GALERY" Relationship="NayysModel.FK_PICTURE_GALERY" FromRole="PICTURE" ToRole="GALERY" />
+    <NavigationProperty Name="PICTUREHASHTAGS" Relationship="NayysModel.FK_HASHTAGS_PICTURE" FromRole="PICTURE" ToRole="PICTUREHASHTAGS" />
+  </EntityType>
+  <EntityType Name="PICTUREHASHTAGS">
+    <Key>
+      <PropertyRef Name="PICTUREID" />
+      <PropertyRef Name="HASHTAG" />
+    </Key>
+    <Property Name="PICTUREID" Type="Guid" Nullable="false" />
+    <Property Name="HASHTAG" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="PICTURE" Relationship="NayysModel.FK_HASHTAGS_PICTURE" FromRole="PICTUREHASHTAGS" ToRole="PICTURE" />
+  </EntityType>
+  <EntityType Name="ROLES">
+    <Key>
+      <PropertyRef Name="ROLEID" />
+    </Key>
+    <Property Name="ROLEID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ROLENAME" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="USERS" Relationship="NayysModel.FK_USERS_ROLES" FromRole="ROLES" ToRole="USERS" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="USERS">
+    <Key>
+      <PropertyRef Name="USERID" />
+    </Key>
+    <Property Name="USERID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="USERNAME" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="PASSWORD" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="ROLEID" Type="Int32" />
+    <NavigationProperty Name="ROLES" Relationship="NayysModel.FK_USERS_ROLES" FromRole="USERS" ToRole="ROLES" />
+  </EntityType>
+  <Association Name="FK_ADVERTISEMENT_GALERY">
+    <End Role="GALERY" Type="NayysModel.GALERY" Multiplicity="0..1" />
+    <End Role="ADVERTISEMENT" Type="NayysModel.ADVERTISEMENT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GALERY">
+        <PropertyRef Name="GALERYID" />
+      </Principal>
+      <Dependent Role="ADVERTISEMENT">
+        <PropertyRef Name="GALERYID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CATEGORY_CATEGORYTYPE">
+    <End Role="CATEGORYTYPE" Type="NayysModel.CATEGORYTYPE" Multiplicity="0..1" />
+    <End Role="CATEGORY" Type="NayysModel.CATEGORY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CATEGORYTYPE">
+        <PropertyRef Name="CATEGORYTYPEID" />
+      </Principal>
+      <Dependent Role="CATEGORY">
+        <PropertyRef Name="CATEGORYTYPEID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GALERY_CATEGORY">
+    <End Role="CATEGORY" Type="NayysModel.CATEGORY" Multiplicity="0..1" />
+    <End Role="GALERY" Type="NayysModel.GALERY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CATEGORY">
+        <PropertyRef Name="CATEGORYID" />
+      </Principal>
+      <Dependent Role="GALERY">
+        <PropertyRef Name="CATEGORYID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GALERYHASHTAGS_GALERY">
+    <End Role="GALERY" Type="NayysModel.GALERY" Multiplicity="1" />
+    <End Role="GALERYHASHTAGS" Type="NayysModel.GALERYHASHTAGS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GALERY">
+        <PropertyRef Name="GALERYID" />
+      </Principal>
+      <Dependent Role="GALERYHASHTAGS">
+        <PropertyRef Name="GALERYID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PICTURE_GALERY">
+    <End Role="GALERY" Type="NayysModel.GALERY" Multiplicity="0..1" />
+    <End Role="PICTURE" Type="NayysModel.PICTURE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GALERY">
+        <PropertyRef Name="GALERYID" />
+      </Principal>
+      <Dependent Role="PICTURE">
+        <PropertyRef Name="GALERYID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HASHTAGS_PICTURE">
+    <End Role="PICTURE" Type="NayysModel.PICTURE" Multiplicity="1" />
+    <End Role="PICTUREHASHTAGS" Type="NayysModel.PICTUREHASHTAGS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PICTURE">
+        <PropertyRef Name="PICTUREID" />
+      </Principal>
+      <Dependent Role="PICTUREHASHTAGS">
+        <PropertyRef Name="PICTUREID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_USERS_ROLES">
+    <End Role="ROLES" Type="NayysModel.ROLES" Multiplicity="0..1" />
+    <End Role="USERS" Type="NayysModel.USERS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ROLES">
+        <PropertyRef Name="ROLEID" />
+      </Principal>
+      <Dependent Role="USERS">
+        <PropertyRef Name="ROLEID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="ADVERTISEMENTTYPE">
+    <Key>
+      <PropertyRef Name="ADVERTISEMENTTYPEID" />
+    </Key>
+    <Property Type="Int32" Name="ADVERTISEMENTTYPEID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ADVERTISEMENTTYPENAME" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ADVERTISEMENT" Relationship="NayysModel.FK_ADVERTISEMENT_ADVERTISEMENTTYPE" FromRole="ADVERTISEMENTTYPE" ToRole="ADVERTISEMENT" />
+  </EntityType>
+  <Association Name="FK_ADVERTISEMENT_ADVERTISEMENTTYPE">
+    <End Type="NayysModel.ADVERTISEMENTTYPE" Role="ADVERTISEMENTTYPE" Multiplicity="1" />
+    <End Type="NayysModel.ADVERTISEMENT" Role="ADVERTISEMENT" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="ADVERTISEMENTTYPE">
+        <PropertyRef Name="ADVERTISEMENTTYPEID" />
+      </Principal>
+      <Dependent Role="ADVERTISEMENT">
+        <PropertyRef Name="ADVERTISEMENTID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

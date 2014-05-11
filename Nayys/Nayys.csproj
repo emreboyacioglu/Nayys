@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{55CE22E3-BFD5-4950-9061-0F6DB800CAD0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nayys</RootNamespace>
+    <AssemblyName>Nayys</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Anasayfa.aspx" />
+    <Content Include="CollagePlus\css\transitions.css" />
+    <Content Include="CollagePlus\extras\jquery.collageCaption.js" />
+    <Content Include="CollagePlus\extras\jquery.collageCaption.min.js" />
+    <Content Include="CollagePlus\extras\jquery.removeWhitespace.js" />
+    <Content Include="CollagePlus\extras\jquery.removeWhitespace.min.js" />
+    <Content Include="CollagePlus\jquery.collagePlus.js" />
+    <Content Include="CollagePlus\jquery.collagePlus.min.js" />
+    <Content Include="CollagePlus\support\examples.css" />
+    <Content Include="CollagePlus\support\images\0.2.0-preview.png" />
+    <Content Include="CollagePlus\support\images\ed-lea-dribbble-1.png" />
+    <Content Include="CollagePlus\support\images\ed-lea-dribbble-10.jpg" />
+    <Content Include="CollagePlus\support\images\ed-lea-dribbble-2.png" />
+    <Content Include="CollagePlus\support\images\ed-lea-dribbble-3.png" />
+    <Content Include="CollagePlus\support\images\ed-lea-dribbble-4.png" />
+    <Content Include="CollagePlus\support\images\ed-lea-dribbble-5.png" />
+    <Content Include="CollagePlus\support\images\ed-lea-dribbble-6.png" />
+    <Content Include="CollagePlus\support\images\ed-lea-dribbble-7.png" />
+    <Content Include="CollagePlus\support\images\ed-lea-dribbble-8.png" />
+    <Content Include="CollagePlus\support\images\ed-lea-dribbble-9.png" />
+    <Content Include="fotolar\1.jpg" />
+    <Content Include="fotolar\2.jpg" />
+    <Content Include="fotolar\baby.jpg" />
+    <Content Include="fotolar\kedi.jpg" />
+    <Content Include="logo.gif" />
+    <Content Include="fotolar\3.jpg" />
+    <Content Include="fotolar\4.jpg" />
+    <Content Include="fotolar\5.jpg" />
+    <Content Include="fotolar\indir %281%29.jpg" />
+    <Content Include="fotolar\indir %282%29.jpg" />
+    <Content Include="fotolar\indir.jpg" />
+    <Content Include="fotolar\kiraz1.jpg" />
+    <Content Include="Style\anasayfa_div\styles.css" />
+    <Content Include="Style\MasterPage\giftly.png" />
+    <Content Include="Style\MasterPage\gplaypattern.png" />
+    <Content Include="Style\MasterPage\hexellence.png" />
+    <Content Include="Style\MasterPage\photography.png" />
+    <Content Include="Style\MasterPage\shattered.png" />
+    <Content Include="Style\MasterPage\skulls.png" />
+    <Content Include="Style\menu\menu_jquery.js" />
+    <Content Include="Style\menu\styles.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADVERTISEMENT.cs">
+      <DependentUpon>NayysEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADVERTISEMENTTYPE.cs">
+      <DependentUpon>NayysEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Anasayfa.aspx.cs">
+      <DependentUpon>Anasayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Anasayfa.aspx.designer.cs">
+      <DependentUpon>Anasayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CATEGORY.cs">
+      <DependentUpon>NayysEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CATEGORYTYPE.cs">
+      <DependentUpon>NayysEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GALERY.cs">
+      <DependentUpon>NayysEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GALERYHASHTAGS.cs">
+      <DependentUpon>NayysEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="model.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>model.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="NayysEntities.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NayysEntities.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NayysEntities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NayysEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PICTURE.cs">
+      <DependentUpon>NayysEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PICTUREHASHTAGS.cs">
+      <DependentUpon>NayysEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ROLES.cs">
+      <DependentUpon>NayysEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>NayysEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="USERS.cs">
+      <DependentUpon>NayysEntities.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CollagePlus\.gitignore" />
+    <None Include="CollagePlus\collageplus.jquery.json" />
+    <None Include="CollagePlus\README.md" />
+    <None Include="CollagePlus\support\.DS_Store" />
+    <Content Include="packages.config" />
+    <EntityDeploy Include="model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>model.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="NayysEntities.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>NayysEntities.Context.cs</LastGenOutput>
+    </None>
+    <None Include="NayysEntities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>NayysEntities.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2651</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
