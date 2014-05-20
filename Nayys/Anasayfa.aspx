@@ -1,4 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Anasayfa.aspx.cs" Inherits="Nayys.Anasayfa" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true"
+    CodeBehind="Anasayfa.aspx.cs" Inherits="Nayys.Anasayfa" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="contentUp" runat="server">
     <script type="text/javascript">
@@ -61,18 +62,16 @@
             </div>
         </HeaderTemplate>
         <ItemTemplate>
-            <div class="repeater">
-                <table>
-                    <tr>
-                        <td>
-                            <asp:Image Style="width: 40%; height: 40%;" runat="server" ImageUrl='<% #DataBinder.Eval(Container.DataItem, "Image") %>'/>
-                        </td>
-                        <td>
-                            <asp:Literal runat="server" Text='<% #DataBinder.Eval(Container.DataItem, "Text") %>'></asp:Literal>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+            <table class="repeater">
+                <tr>
+                    <td>
+                        <asp:Image Style=" max-width: 150px; max-height: 150px;" runat="server" ImageUrl='<% #DataBinder.Eval(Container.DataItem, "Image") %>' />
+                    </td>
+                    <td style="float:left; margin-left:10px;width:450px;">
+                        <asp:Literal runat="server" Text='<% #DataBinder.Eval(Container.DataItem, "Text") %>'></asp:Literal>
+                    </td>
+                </tr>
+            </table>
         </ItemTemplate>
     </asp:Repeater>
     <br />
