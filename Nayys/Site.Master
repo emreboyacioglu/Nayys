@@ -22,7 +22,7 @@
     <script src="CollagePlus/extras/jquery.removeWhitespace.min.js"></script>
     <script src="CollagePlus/extras/jquery.collageCaption.min.js"></script>
 </head>
-<body style="background-image: url('Style/MasterPage/skulls.png'); overflow: scroll;">
+<body style="background-image: url('Style/MasterPage/skulls.png'); overflow: auto;">
     <div id='cssmenu'>
         <ul>
         <img src="logo.gif" height="35" style="float:left;margin-left:5px;margin-top:5px;"/><!--LOGO bölümü-->

@@ -6,10 +6,9 @@
   padding: 0;
   line-height: 1;
   display: block;
-  position: fixed;
+  position: relative;
   font-family: 'PT Sans';
   z-index:100;
- 
 }
 .logo
 {

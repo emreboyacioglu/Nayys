@@ -7,3 +7,12 @@ D:\Nayys.git\trunk\Nayys\bin\EntityFramework.SqlServer.xml
 D:\Nayys.git\trunk\Nayys\obj\Debug\Nayys.dll
 D:\Nayys.git\trunk\Nayys\obj\Debug\Nayys.pdb
 D:\Nayys.git\trunk\Nayys\obj\Debug\Nayys.csprojResolveAssemblyReference.cache
+C:\Documents and Settings\boyacy\Desktop\Nayys.git\trunk\Nayys\bin\Nayys.dll
+C:\Documents and Settings\boyacy\Desktop\Nayys.git\trunk\Nayys\bin\Nayys.pdb
+C:\Documents and Settings\boyacy\Desktop\Nayys.git\trunk\Nayys\bin\EntityFramework.dll
+C:\Documents and Settings\boyacy\Desktop\Nayys.git\trunk\Nayys\bin\EntityFramework.SqlServer.dll
+C:\Documents and Settings\boyacy\Desktop\Nayys.git\trunk\Nayys\bin\EntityFramework.xml
+C:\Documents and Settings\boyacy\Desktop\Nayys.git\trunk\Nayys\bin\EntityFramework.SqlServer.xml
+C:\Documents and Settings\boyacy\Desktop\Nayys.git\trunk\Nayys\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\boyacy\Desktop\Nayys.git\trunk\Nayys\obj\Debug\Nayys.dll
+C:\Documents and Settings\boyacy\Desktop\Nayys.git\trunk\Nayys\obj\Debug\Nayys.pdb

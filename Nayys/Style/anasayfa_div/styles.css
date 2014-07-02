@@ -2,7 +2,7 @@
 {
     float: left;
 }
-.repeater
+.leftRepeater
 {
     float: left;
     padding-top: 10px;
@@ -13,7 +13,24 @@
     margin-right: 10px;
     border-bottom-style: solid;
     border-color: #E1DFDF;
-    border-width:thin;
+    border-width: thin;
+}
+.leftleftRepeaterTop
+{
+    font-family: Tahoma;
+    color: Silver;
+}
+.leftRepeaterTextHeader
+{
+    font-family: Calibri;
+    color: Black;
+    font-size: medium;
+}
+.leftRepeaterTextDescription
+{
+    font-family: Tahoma;
+    color: Silver;
+    font-size: smaller;
 }
 .divLeft
 {
@@ -23,7 +40,7 @@
     margin-right: auto;
     float: left;
     height: auto;
-    width: 670px;
+    width: 550px;
     background-color: White;
 }
 .divRight
