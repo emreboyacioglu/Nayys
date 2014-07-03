@@ -55,34 +55,40 @@
             </div>
         </div>
     </div>
-    <div id="container" style="margin-left:auto;margin-right:auto;width:auto;display:inline-block;">
-        <div class="divLeft">
-            <asp:Repeater ID="leftRepeater" runat="server">
-                <HeaderTemplate>
-                    <div>
-                        <asp:Label CssClass="leftleftRepeaterTop" runat="server">Ortaya Karışık</asp:Label>
-                    </div>
-                </HeaderTemplate>
-                <ItemTemplate>
-                    <table class="leftRepeater">
-                        <tr>
-                            <td>
-                                <asp:Image Style="border-radius: 2%; max-width: 150px; max-height: 150px; float: left;"
-                                    runat="server" ImageUrl='<% #DataBinder.Eval(Container.DataItem, "Image") %>' />
-                            </td>
-                            <td valign="middle" align="center" style="width: 350px;">
-                                <asp:Label CssClass="leftRepeaterTextHeader" runat="server" Text='<% #DataBinder.Eval(Container.DataItem, "TextHeader") %>'></asp:Label>
-                                <br />
-                                <asp:Label CssClass="leftRepeaterTextDescription" runat="server" Text='<% #DataBinder.Eval(Container.DataItem, "TextDescription") %>'></asp:Label>
-                            </td>
-                        </tr>
-                    </table>
-                </ItemTemplate>
-            </asp:Repeater>
-        </div>
-        <div class="divRight">
-            Alan2
-        </div>
-    </div>
+    <table style="margin-left:auto;margin-right:auto;">
+        <tr>
+            <td>
+                <div class="divLeft">
+                    <asp:Repeater ID="leftRepeater" runat="server">
+                        <HeaderTemplate>
+                            <div>
+                                <asp:Label CssClass="leftleftRepeaterTop" runat="server">Ortaya Karışık</asp:Label>
+                            </div>
+                        </HeaderTemplate>
+                        <ItemTemplate>
+                            <table class="leftRepeater">
+                                <tr>
+                                    <td>
+                                        <asp:Image Style="border-radius: 2%; max-width: 150px; max-height: 150px; float: left;"
+                                            runat="server" ImageUrl='<% #DataBinder.Eval(Container.DataItem, "Image") %>' />
+                                    </td>
+                                    <td valign="middle" align="center" style="width: 350px;">
+                                        <asp:Label CssClass="leftRepeaterTextHeader" runat="server" Text='<% #DataBinder.Eval(Container.DataItem, "TextHeader") %>'></asp:Label>
+                                        <br />
+                                        <asp:Label CssClass="leftRepeaterTextDescription" runat="server" Text='<% #DataBinder.Eval(Container.DataItem, "TextDescription") %>'></asp:Label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </div>
+            </td>
+            <td>
+                <div class="divRight">
+                    Alan2
+                </div>
+            </td>
+        </tr>
+    </table>
     </form>
 </asp:Content>
