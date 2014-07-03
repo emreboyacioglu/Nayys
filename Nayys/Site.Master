@@ -42,18 +42,7 @@
     </div>
     <br />
     <br />
-    <div class="divCollage" >
-        <!-- AnaSayfadaki collage yapı için -->
-        <asp:ContentPlaceHolder runat="server" ID="contentUp" />
-    </div>
-    <div class="divLeft">
-        <!-- sol bölüm-->
-        <asp:ContentPlaceHolder runat="server" ID="contentLeft" />
-    </div>
-    <div class="divRight">
-        <!-- sag bölüm -->
-        <asp:ContentPlaceHolder runat="server" ID="contentRight" />
-    </div>
+        <asp:ContentPlaceHolder runat="server" ID="content" />
     <br />
     <br />
     <br />

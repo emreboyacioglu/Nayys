@@ -13,30 +13,12 @@ namespace Nayys {
     public partial class Site {
         
         /// <summary>
-        /// contentUp control.
+        /// content control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder contentUp;
-        
-        /// <summary>
-        /// contentLeft control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder contentLeft;
-        
-        /// <summary>
-        /// contentRight control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder contentRight;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder content;
     }
 }
