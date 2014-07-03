@@ -40,20 +40,7 @@
             <li class='last'><a href='#'><span>Yeni Eklenenler</span></a></li>
         </ul>
     </div>
-    <br />
-    <br />
         <asp:ContentPlaceHolder runat="server" ID="content" />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+
 </body>
 </html>
