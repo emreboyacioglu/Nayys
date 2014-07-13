@@ -15,7 +15,7 @@
     border-color: #E1DFDF;
     border-width: thin;
 }
-.leftRepeaterTop
+.RepeaterTopHeader
 {
     font-family: Tahoma;
     color: Silver;
@@ -24,16 +24,17 @@
 {
     font-family: Calibri;
     color: Black;
-    font-size: medium;
+    font-size: 20px;
 }
 .leftRepeaterTextDescription
 {
     font-family: Tahoma;
     color: Silver;
-    font-size: smaller;
+    font-size: 15px;
 }
 .divLeft
 {
+    display:inline-table;
     border-radius: 2%;
     position: static;
     margin-left: 40px;
@@ -50,19 +51,36 @@
 }
 .divRight
 {
+    display:inline-table;
     border-radius: 2%;
     position: static;
     margin-left: 40px;
     margin-right: auto;
     float: left;
     height: auto;
-    max-width: 410px;
+    max-width: 300px;
     border: 3px #ffffff solid;
     border: 3px #ffffff solid;
     background-color: #ffffff;
     -moz-box-shadow: 0px 0px 1px 1px #fdfcfc;
     -webkit-box-shadow: 0px 0px 1px 1px #fdfcfc;
     box-shadow: 0px 0px 1px 1px #fdfcfc;
+}
+.rightRepeater
+{
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom-style: solid;
+    border-color: #E1DFDF;
+    border-width: thin;
+}
+.rightRepeaterTextHeader
+{
+    text-align:left;
+    font-family: Calibri;
+    color: Black;
+    font-size: 20px;
 }
 .Collage
 {

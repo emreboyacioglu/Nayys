@@ -12,6 +12,48 @@ namespace Nayys
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            LeftLayout();
+            RightLayout();
+        }
+
+        private void RightLayout()
+        {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("TextHeaderRight");
+            dt.Columns.Add("ImageRight");
+
+            DataRow dr = dt.NewRow();
+            dr["TextHeaderRight"] = "Vizesiz gidebileceğiniz 50 ülke";
+            dr["ImageRight"] = "http://www.resimland.com/data/media/26/81.jpg";
+            dt.Rows.Add(dr);
+
+            dr = dt.NewRow();
+            dr["TextHeaderRight"] = "Unutulmayan türk filmi replikleri";
+            dr["ImageRight"] = "http://img1.img10.com/cicek-abbas-atisma-sahnesi-yesilcam-klasikleri.jpg";
+            dt.Rows.Add(dr);
+
+            dr = dt.NewRow();
+            dr["TextHeaderRight"] = "Gereksiz geyikler listesi";
+            dr["ImageRight"] = "http://media.tumblr.com/tumblr_ljlcrxhtsq1qzexgu.jpg";
+            dt.Rows.Add(dr);
+
+            dr = dt.NewRow();
+            dr["TextHeaderRight"] = "Yaz aylarında yenmesi gereken mükemmel lezzetler";
+            dr["ImageRight"] = "http://www.diyetcim.net/wp-content/uploads/kiraz.jpg";
+            dt.Rows.Add(dr);
+
+            dr = dt.NewRow();
+            dr["TextHeaderRight"] = "Gülümseten kareler";
+            dr["ImageRight"] = "http://funnyanimalz.com/blog/wp-content/uploads/2013/03/funny-animal-captions-Time-for-tickles.jpg";
+            dt.Rows.Add(dr);
+        
+            rightRepeater.DataSource = dt;
+            rightRepeater.DataBind();
+
+        }
+
+        private void LeftLayout()
+        {
             DataTable dt = new DataTable();
             dt.Columns.Add("TextHeader");
             dt.Columns.Add("TextDescription");
@@ -38,7 +80,6 @@ namespace Nayys
 
             leftRepeater.DataSource = dt;
             leftRepeater.DataBind();
-
         }
     }
 }
