@@ -14,6 +14,7 @@ namespace Nayys
         {
             LeftLayout();
             RightLayout();
+            LeftSecondLayout();
         }
 
         private void RightLayout()
@@ -80,6 +81,42 @@ namespace Nayys
 
             leftRepeater.DataSource = dt;
             leftRepeater.DataBind();
+        }
+
+        private void LeftSecondLayout()
+        {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("TextHeader");
+            dt.Columns.Add("TextDescription");
+            dt.Columns.Add("Image");
+
+
+            DataRow dr = dt.NewRow();
+            dr["TextHeader"] = "Çift kale maça hazır mısın?!";
+            dr["TextDescription"] = "Atlamadan edemedik, aburcubur tarifleri için eşsiz bir başlangıç";
+            dr["Image"] = "http://www.kiss925.com/files/Superbowl-snack-2.jpg";
+            dt.Rows.Add(dr);
+
+            dr = dt.NewRow();
+            dr["TextHeader"] = "Şerefine Tayyip";
+            dr["TextDescription"] = "Çarşı grubunun Gezi eylemlerimde yarattığı eşsiz tezahuratları duyunca gülmekten kırılacaksınız..";
+            dr["Image"] = "http://media2.ntvmsnbc.com/j/NTVMSNBC/Components/ArtAndPhoto-Fronts/SectionsThumbnails-TSM-Colorbox/_Cover/130516_alkol.hlarge.jpg";
+            dt.Rows.Add(dr);
+
+            dr = dt.NewRow();
+            dr["TextHeader"] = "Şampiyon Galatasaray!";
+            dr["TextDescription"] = "Herkesin bir aşkı vardır, aşkı galatasaray olanlar buraya!";
+            dr["Image"] = "http://img.webme.com/pic/k/kapakresmi/gs41.jpg";
+            dt.Rows.Add(dr);
+
+            dr = dt.NewRow();
+            dr["TextHeader"] = "Aşıklar Şehri Budapeşte ve Prag!";
+            dr["TextDescription"] = "Romantik bir tatil için sevgilinize süpriz yapıp onunla beraber bu eşsiz yerleri mutlaka görün.";
+            dr["Image"] = "http://vanhaberleri.com.tr/wp-content/uploads/2014/06/Prag-Nerede-Nerenin-Ba%C5%9Fkenti-Hangi-%C3%BClkede-Hangi-K%C4%B1tada.-642x320.jpg";
+            dt.Rows.Add(dr);
+
+            leftRepeaterSecond.DataSource = dt;
+            leftRepeaterSecond.DataBind();
         }
     }
 }

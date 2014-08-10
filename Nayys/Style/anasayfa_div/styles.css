@@ -34,12 +34,21 @@
 }
 .divLeft
 {
+    display:inline-block;
+    position:static;
+    float: left;
+    height: auto;
+    width:550px;
+    overflow:auto;
+}
+.divLeft .layout
+{
     display:inline-table;
+    float:left;
+    margin-bottom:10px;
     border-radius: 2%;
-    position: static;
     margin-left: 40px;
     margin-right: auto;
-    float: left;
     height: auto;
     max-width: 550px;
     border: 3px #ffffff solid;
@@ -48,6 +57,15 @@
     -moz-box-shadow: 0px 0px 1px 1px #fdfcfc;
     -webkit-box-shadow: 0px 0px 1px 1px #fdfcfc;
     box-shadow: 0px 0px 1px 1px #fdfcfc;
+}
+
+.divMiddle
+{
+    display:inline-table;
+    border-radius: 2%;
+    position: static;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .divRight
 {
