@@ -70,8 +70,7 @@
                                 <table class="leftRepeater">
                                     <tr>
                                         <td>
-                                            <asp:Image Style="border-radius: 2%; max-width: 150px; max-height: 150px; float: left;"
-                                                runat="server" ImageUrl='<% #DataBinder.Eval(Container.DataItem, "Image") %>' />
+                                            <asp:Image runat="server" CssClass="image" ImageUrl='<% #DataBinder.Eval(Container.DataItem, "Image") %>' />
                                         </td>
                                         <td valign="top" align="left" style="width: 350px;">
                                             <asp:Label CssClass="leftRepeaterTextHeader" runat="server" Text='<% #DataBinder.Eval(Container.DataItem, "TextHeader") %>'></asp:Label>
@@ -94,8 +93,7 @@
                                 <table class="leftRepeater">
                                     <tr>
                                         <td>
-                                            <asp:Image Style="border-radius: 2%; max-width: 150px; max-height: 150px; float: left;"
-                                                runat="server" ImageUrl='<% #DataBinder.Eval(Container.DataItem, "Image") %>' />
+                                            <asp:Image runat="server" CssClass="image" ImageUrl='<% #DataBinder.Eval(Container.DataItem, "Image") %>' />
                                         </td>
                                         <td valign="top" align="left" style="width: 350px;">
                                             <asp:Label ID="Label4" CssClass="leftRepeaterTextHeader" runat="server" Text='<% #DataBinder.Eval(Container.DataItem, "TextHeader") %>'></asp:Label>
