@@ -14,7 +14,8 @@ namespace Nayys
         {
             LeftLayout();
             RightLayout();
-            LeftSecondLayout();
+            LeftSecondLayout(); 
+            MiddleLayout();
         }
 
         private void RightLayout()
@@ -25,7 +26,7 @@ namespace Nayys
 
             DataRow dr = dt.NewRow();
             dr["TextHeaderRight"] = "Vizesiz gidebileceğiniz 50 ülke";
-            dr["ImageRight"] = "http://www.resimland.com/data/media/26/81.jpg";
+            dr["ImageRight"] = "http://techmeetups.com/wp-content/uploads/2012/10/Budapest-Weather.jpg";
             dt.Rows.Add(dr);
 
             dr = dt.NewRow();
@@ -117,6 +118,42 @@ namespace Nayys
 
             leftRepeaterSecond.DataSource = dt;
             leftRepeaterSecond.DataBind();
+        }
+        
+            
+        private void MiddleLayout()
+        {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("TextHeaderMiddle");
+            dt.Columns.Add("ImageMiddle");
+
+            DataRow dr = dt.NewRow();
+            dr["TextHeaderMiddle"] = "20 ilginç bilgi";
+            dr["ImageMiddle"] = "http://www.newconceptmandarin.com/storage/article/image/201406/20140623115921_37869.jpeg";
+            dt.Rows.Add(dr);
+
+            dr = dt.NewRow();
+            dr["TextHeaderMiddle"] = "Hayatınızı kolaylaştıracak 10 bilgi";
+            dr["ImageMiddle"] = "http://rayhigdon.com/wp-content/uploads/2014/03/yes-man1.jpg";
+            dt.Rows.Add(dr);
+
+            dr = dt.NewRow();
+            dr["TextHeaderMiddle"] = "Yaratıcı ressamlardan resimler";
+            dr["ImageMiddle"] = "http://www.fludit.com/images/stories/Inspiration/Creative-Artwork-by-Ben-Heine-Pencil-vs-Camera/Creative-Artwork-by-Ben-Heine-Pencil-vs-Camera-9.jpg";
+            dt.Rows.Add(dr);
+
+            dr = dt.NewRow();
+            dr["TextHeaderMiddle"] = "İstanbuldaki mükemmel restorantlar";
+            dr["ImageMiddle"] = "http://img.gecce.com/2013/01/07/beyti-develi-104553G8.jpg";
+            dt.Rows.Add(dr);
+
+            dr = dt.NewRow();
+            dr["TextHeaderMiddle"] = "Bebekler!";
+            dr["ImageMiddle"] = "http://www.bebekgazetesi.com/uploads/bebek_banyo.jpg";
+            dt.Rows.Add(dr);
+        
+            Repeater1.DataSource = dt;
+            Repeater1.DataBind();
         }
     }
 }

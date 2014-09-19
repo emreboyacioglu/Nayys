@@ -63,7 +63,7 @@
                         <asp:Repeater ID="leftRepeater" runat="server">
                             <HeaderTemplate>
                                 <div>
-                                    <asp:Label CssClass="RepeaterTopHeader" runat="server">Ortaya Karışık</asp:Label>
+                                    <asp:Label CssClass="RepeaterTopHeader" runat="server">Yaneyooo!</asp:Label>
                                 </div>
                             </HeaderTemplate>
                             <ItemTemplate>
@@ -86,7 +86,7 @@
                         <asp:Repeater ID="leftRepeaterSecond" runat="server">
                             <HeaderTemplate>
                                 <div>
-                                    <asp:Label ID="Label3" CssClass="RepeaterTopHeader" runat="server">Haftanın En İyileri!</asp:Label>
+                                    <asp:Label ID="Label3" CssClass="RepeaterTopHeader" runat="server">Little little into middle</asp:Label>
                                 </div>
                             </HeaderTemplate>
                             <ItemTemplate>
@@ -123,6 +123,29 @@
                                 <tr>
                                     <td valign="middle" align="center" style="width: 350px;">
                                         <asp:Label ID="Label2" CssClass="rightRepeaterTextHeader" runat="server" Text='<% #DataBinder.Eval(Container.DataItem, "TextHeaderRight") %>'></asp:Label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </div>
+            </td>
+            <td>
+             <div class="divRight">
+                    <asp:Repeater runat="server" ID="Repeater1">
+                        <HeaderTemplate>
+                            <asp:Label ID="Label1" CssClass="RepeaterTopHeader" runat="server">Enterestink</asp:Label>
+                        </HeaderTemplate>
+                        <ItemTemplate>
+                            <table class="rightRepeater">
+                                <tr>
+                                    <td valign="middle" align="center">
+                                        <asp:Image ID="imgMiddle" Style="max-width: 250px; max-height: 250px;" runat="server" ImageUrl='<% #DataBinder.Eval(Container.DataItem, "ImageMiddle") %>' />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="middle" align="center" style="width: 350px;">
+                                        <asp:Label ID="Label2" CssClass="rightRepeaterTextHeader" runat="server" Text='<% #DataBinder.Eval(Container.DataItem, "TextHeaderMiddle") %>'></asp:Label>
                                     </td>
                                 </tr>
                             </table>
