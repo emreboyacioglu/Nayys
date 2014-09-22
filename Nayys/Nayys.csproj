@@ -85,6 +85,8 @@
     <Content Include="fotolar\2.jpg" />
     <Content Include="fotolar\baby.jpg" />
     <Content Include="fotolar\kedi.jpg" />
+    <Content Include="Galeri.aspx" />
+    <Content Include="Kategori.aspx" />
     <Content Include="logo.gif" />
     <Content Include="fotolar\3.jpg" />
     <Content Include="fotolar\4.jpg" />
@@ -94,6 +96,7 @@
     <Content Include="fotolar\indir.jpg" />
     <Content Include="fotolar\kiraz1.jpg" />
     <Content Include="Style\anasayfa_div\styles.css" />
+    <Content Include="Style\Galeri\style.css" />
     <Content Include="Style\MasterPage\giftly.png" />
     <Content Include="Style\MasterPage\gplaypattern.png" />
     <Content Include="Style\MasterPage\hexellence.png" />
@@ -130,11 +133,25 @@
     <Compile Include="CATEGORYTYPE.cs">
       <DependentUpon>NayysEntities.tt</DependentUpon>
     </Compile>
+    <Compile Include="Galeri.aspx.cs">
+      <DependentUpon>Galeri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Galeri.aspx.designer.cs">
+      <DependentUpon>Galeri.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GALERY.cs">
       <DependentUpon>NayysEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="GALERYHASHTAGS.cs">
       <DependentUpon>NayysEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Kategori.aspx.cs">
+      <DependentUpon>Kategori.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kategori.aspx.designer.cs">
+      <DependentUpon>Kategori.aspx</DependentUpon>
     </Compile>
     <Compile Include="model.Designer.cs">
       <AutoGen>True</AutoGen>

@@ -1,0 +1,18 @@
+﻿body {
+}
+.left{
+   position: relative;
+   float: left;
+   left: 5px;
+   width: 900px;
+   height: 900px;
+   background-color: #ffffff
+}
+.right{
+   position: relative;
+   float: left;
+   left: 15px;
+   width: 300px;
+   max-width:300px;
+   background-color: #828282
+}

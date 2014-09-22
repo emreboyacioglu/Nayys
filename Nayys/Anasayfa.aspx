@@ -15,10 +15,10 @@
         function collage() {
             $('.Collage').removeWhitespace().collagePlus(
             {
-                'fadeSpeed': 2000,
+                'fadeSpeed': 0,
                 'targetHeight': 200,
                 'direction': 'vertical'
-
+               
             }
         );
         };
@@ -27,7 +27,7 @@
 
     </script>
     <div class="divCollage">
-        <div class="Collage effect-parent" style="width: 1100px; max-height: 600px; margin-left: auto;
+        <div class="Collage effect-parent" style="width: 1100px;max-height:1100px; max-height: 600px; margin-left: auto;
             margin-right: auto;">
             <div class="Image_Wrapper" data-caption="arrrmut">
                 <img src="fotolar/1.jpg" />
