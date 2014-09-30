@@ -13,6 +13,7 @@
     <RootNamespace>Nayys</RootNamespace>
     <AssemblyName>Nayys</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -86,6 +87,7 @@
     <Content Include="fotolar\baby.jpg" />
     <Content Include="fotolar\kedi.jpg" />
     <Content Include="Galeri.aspx" />
+    <Content Include="Style\GaleryStyle.css" />
     <Content Include="Kategori.aspx" />
     <Content Include="logo.gif" />
     <Content Include="fotolar\3.jpg" />

@@ -13,12 +13,30 @@ namespace Nayys {
     public partial class Galeri {
         
         /// <summary>
-        /// repeaterRight control.
+        /// rptGalery control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater repeaterRight;
+        protected global::System.Web.UI.WebControls.Repeater rptGalery;
+        
+        /// <summary>
+        /// hlGalery control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink hlGalery;
+        
+        /// <summary>
+        /// rightRepeater control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rightRepeater;
     }
 }

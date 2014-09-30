@@ -24,7 +24,6 @@
         };
 
         
-
     </script>
     <div class="divCollage">
         <div class="Collage effect-parent" style="width: 1100px;max-height:1100px; max-height: 600px; margin-left: auto;
