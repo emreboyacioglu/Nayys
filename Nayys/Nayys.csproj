@@ -87,7 +87,7 @@
     <Content Include="fotolar\baby.jpg" />
     <Content Include="fotolar\kedi.jpg" />
     <Content Include="Galeri.aspx" />
-    <Content Include="Style\GaleryStyle.css" />
+    <Content Include="Style\Galeri\GaleryStyle.css" />
     <Content Include="Kategori.aspx" />
     <Content Include="logo.gif" />
     <Content Include="fotolar\3.jpg" />
@@ -98,7 +98,6 @@
     <Content Include="fotolar\indir.jpg" />
     <Content Include="fotolar\kiraz1.jpg" />
     <Content Include="Style\anasayfa_div\styles.css" />
-    <Content Include="Style\Galeri\style.css" />
     <Content Include="Style\MasterPage\giftly.png" />
     <Content Include="Style\MasterPage\gplaypattern.png" />
     <Content Include="Style\MasterPage\hexellence.png" />
@@ -218,6 +217,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Style\fonts\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

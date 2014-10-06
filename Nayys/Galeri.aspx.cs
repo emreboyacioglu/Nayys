@@ -12,8 +12,14 @@ namespace Nayys
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Reklam();
             Galery();
             RightLayout();
+        }
+
+        private void Reklam()
+        {
+            imgReklam.ImageUrl = "fotolar/reklam.jpg";
         }
 
         private void Galery()
@@ -25,27 +31,27 @@ namespace Nayys
             dt.Columns.Add("imgGalery");
 
             DataRow dr = dt.NewRow();
-            dr["lblGaleryDescription"] = "Ya bu şirin şey?";
+            dr["lblGaleryDescription"] = "1-) Ya bu şirin şey?";
             dr["imgGalery"] = "http://67.207.159.106/wp-content/uploads/2014/06/cute-puppies1.jpg";
             dt.Rows.Add(dr);
 
             dr = dt.NewRow();
-            dr["lblGaleryDescription"] = "Isır bunun ağzını burnunu";
+            dr["lblGaleryDescription"] = "2-) Isır bunun ağzını burnunu";
             dr["imgGalery"] = "http://cdn.cutestpaw.com/wp-content/uploads/2011/11/Two-Litte-Dog-l.jpg";
             dt.Rows.Add(dr);
 
             dr = dt.NewRow();
-            dr["lblGaleryDescription"] = "Hamburger!";
+            dr["lblGaleryDescription"] = "3-) Hamburger!";
             dr["imgGalery"] = "http://images2.fanpop.com/image/photos/13300000/Cute-Puppy-puppies-13379771-1280-800.jpg";
             dt.Rows.Add(dr);
 
             dr = dt.NewRow();
-            dr["lblGaleryDescription"] = "Pisttttttttttttttt";
-            dr["imgGalery"] = "http://shechive.files.wordpress.com/2012/02/kitty-cat-26.jpg";
+            dr["lblGaleryDescription"] = "4-) Pisttttttttttttttt";
+            dr["imgGalery"] = "http://humorguru.hu/wp-content/uploads/2013/02/funny-kitty-norwegian-forest-cats_1920x1200_71116.jpg";
             dt.Rows.Add(dr);
 
             dr = dt.NewRow();
-            dr["lblGaleryDescription"] = "Naber adamım?!";
+            dr["lblGaleryDescription"] = "5-) Naber adamım?!";
             dr["imgGalery"] = "http://viralquake.com/wp-content/uploads/2014/03/imagesbackgrounds.in_.jpg";
             dt.Rows.Add(dr);
 

@@ -2,29 +2,36 @@
     CodeBehind="Galeri.aspx.cs" Inherits="Nayys.Galeri" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="content" runat="server">
-    <link href="Style/GaleryStyle.css" rel="stylesheet" type="text/css" />
-    <div style="width:1440px;display:flex;margin-right:auto;margin-left:auto;">
-        <div class="left marginFromTop" id="divGaleri">
+    <link href="Style/Galeri/GaleryStyle.css" rel="stylesheet" type="text/css" />
+    <div style="display: block; margin-left: auto; margin-right: auto; width: 1200px;">
+        <div class="left marginFromTop subline" id="divGaleri">
             <asp:Repeater runat="server" ID="rptGalery">
                 <HeaderTemplate>
+                <asp:Label runat="server" CssClass="header" ID="lblHeader">Hayvanlar Aleminin En güzel Yaratıkları</asp:Label>
                 </HeaderTemplate>
                 <ItemTemplate>
-                    <asp:Label ID="lblDescription" runat="server" CssClass="galeryDescription" Text='<% #DataBinder.Eval(Container.DataItem, "lblGaleryDescription") %>'></asp:Label>
-                    <br />
-                    <asp:Image ImageAlign="AbsMiddle" ID="imgGalery" runat="server" CssClass="galeryImage"
-                        ImageUrl='<% #DataBinder.Eval(Container.DataItem, "imgGalery") %>' />
-                    <br />
+                    <table>
+                        <tr class="subline">
+                            <td class="subline">
+                                <asp:Label ID="lblDescription" runat="server" CssClass="galeryDescription" Text='<% #DataBinder.Eval(Container.DataItem, "lblGaleryDescription") %>'></asp:Label>
+                                <asp:Image ImageAlign="AbsMiddle" ID="imgGalery" runat="server" CssClass="galeryImage"
+                                    ImageUrl='<% #DataBinder.Eval(Container.DataItem, "imgGalery") %>' />
+                                <br />
+                            </td>
+                        </tr>
+                    </table>
                 </ItemTemplate>
             </asp:Repeater>
             <asp:HyperLink ID="hlGalery" runat="server" CssClass="galerySource" Text="Source"></asp:HyperLink>
         </div>
-        <div class="divRight marginFromTop" style="margin-left:40px;">
-            <div id="reklam">
+        <div class="divRight marginFromTop" style="margin-left: 40px;">
+            <div id="reklam" style="margin-bottom: 20px; margin-top: 15px;">
+                <asp:Image runat="server" CssClass="reklam" ID="imgReklam" />
             </div>
-            <div class="divRight" >
+            <div>
                 <asp:Repeater runat="server" ID="rightRepeater">
                     <HeaderTemplate>
-                        <asp:Label ID="Label1" CssClass="RepeaterTopHeader" runat="server">Enterestink</asp:Label>
+                        <asp:Label ID="Label1" CssClass="small" runat="server">Enterestink</asp:Label>
                     </HeaderTemplate>
                     <ItemTemplate>
                         <table class="rightRepeater">
