@@ -14,12 +14,38 @@ namespace Nayys
         {
             Reklam();
             Galery();
+            Suggestions();
             RightLayout();
+        }
+
+        private void Suggestions()
+        {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("TextSuggestion");
+            dt.Columns.Add("imgSuggestion");
+
+            DataRow dr = dt.NewRow();
+            dr["TextSuggestion"] = "Küçükken korktuğumuz hayvanlar";
+            dr["imgSuggestion"] = "http://www.graphics99.com/wp-content/uploads/2012/06/elephant-bathing-under-waterfall.jpg";
+            dt.Rows.Add(dr);
+
+            dr = dt.NewRow();
+            dr["TextSuggestion"] = "Tipsiz 10 Hayvan";
+            dr["imgSuggestion"] = "http://i.telegraph.co.uk/multimedia/archive/02585/MONKEY_2585151b.jpg";
+            dt.Rows.Add(dr);
+
+            dr = dt.NewRow();
+            dr["TextSuggestion"] = "En Tatlı Yaratıklar";
+            dr["imgSuggestion"] = "http://img.izismile.com/img/img5/20120517/640/these_funny_animals_640_41.jpg";
+            dt.Rows.Add(dr);
+
+            rptSuggestions.DataSource = dt;
+            rptSuggestions.DataBind();
         }
 
         private void Reklam()
         {
-            imgReklam.ImageUrl = "fotolar/reklam.jpg";
+            imgReklam.ImageUrl = "http://volkanca.net/wp-content/uploads/2014/02/kalp-pizza.jpg";
         }
 
         private void Galery()

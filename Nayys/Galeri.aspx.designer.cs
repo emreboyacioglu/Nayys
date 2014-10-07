@@ -31,6 +31,15 @@ namespace Nayys {
         protected global::System.Web.UI.WebControls.HyperLink hlGalery;
         
         /// <summary>
+        /// rptSuggestions control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptSuggestions;
+        
+        /// <summary>
         /// imgReklam control.
         /// </summary>
         /// <remarks>
