@@ -37,18 +37,10 @@
                     <HeaderTemplate>
                     </HeaderTemplate>
                     <ItemTemplate>
-                        <table class="rightRepeater">
-                            <tr>
-                                <td valign="middle" align="center" style="width: 350px;">
-                                    <asp:Label ID="lblSuggestion" CssClass="lblSuggestion" runat="server" Text='<% #DataBinder.Eval(Container.DataItem, "TextSuggestion") %>'></asp:Label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td valign="middle" align="center">
-                                    <asp:Image ID="imgSuggestion" runat="server" CssClass="imgSuggestion" ImageUrl='<% #DataBinder.Eval(Container.DataItem, "imgSuggestion") %>' />
-                                </td>
-                            </tr>
-                        </table>
+                        <div class="divSuggestion">
+                            <asp:Image ID="imgSuggestion" runat="server" CssClass="imgSuggestion" ImageUrl='<% #DataBinder.Eval(Container.DataItem, "imgSuggestion") %>' />
+                            <asp:Label ID="lblSuggestion" CssClass="lblSuggestion" runat="server" Text='<% #DataBinder.Eval(Container.DataItem, "TextSuggestion") %>'></asp:Label>
+                        </div>
                     </ItemTemplate>
                 </asp:Repeater>
             </div>
@@ -81,5 +73,4 @@
             </div>
         </div>
     </div>
-    
 </asp:Content>

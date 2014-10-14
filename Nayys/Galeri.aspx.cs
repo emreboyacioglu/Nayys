@@ -25,7 +25,7 @@ namespace Nayys
             dt.Columns.Add("imgSuggestion");
 
             DataRow dr = dt.NewRow();
-            dr["TextSuggestion"] = "Küçükken korktuğumuz hayvanlar";
+            dr["TextSuggestion"] = "Küçükken korktuğumuz hayvanların orjinal listesi";
             dr["imgSuggestion"] = "http://www.graphics99.com/wp-content/uploads/2012/06/elephant-bathing-under-waterfall.jpg";
             dt.Rows.Add(dr);
 

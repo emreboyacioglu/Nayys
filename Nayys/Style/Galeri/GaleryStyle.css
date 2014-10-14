@@ -4,38 +4,39 @@
     src: url(http://fonts.gstatic.com/s/jockeyone/v6/8Hj8G_JpSADPYrRpzMno2lQlYEbsez9cZjKsNMjLOwM.eot);
     src: local('Jockey One'), local('JockeyOne-Regular'), url(http://fonts.gstatic.com/s/jockeyone/v6/8Hj8G_JpSADPYrRpzMno2lQlYEbsez9cZjKsNMjLOwM.eot) format('embedded-opentype'), url(http://fonts.gstatic.com/s/jockeyone/v6/8Hj8G_JpSADPYrRpzMno2hsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
 }
-@font-face {
-  font-family: 'Open Sans Condensed';
-  font-style: normal;
-  font-weight: 300;
-  src: url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xOnoCx_jK1JUF_-5xuexfsU.eot);
-  src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xOnoCx_jK1JUF_-5xuexfsU.eot) format('embedded-opentype'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xF1YPouZEKgzpqZW9wN-3Ek.woff) format('woff');
+@font-face
+{
+    font-family: 'Open Sans Condensed';
+    font-style: normal;
+    font-weight: 300;
+    src: url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xOnoCx_jK1JUF_-5xuexfsU.eot);
+    src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xOnoCx_jK1JUF_-5xuexfsU.eot) format('embedded-opentype'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xF1YPouZEKgzpqZW9wN-3Ek.woff) format('woff');
 }
 
 .header
 {
-    margin-top:-25px;
-    margin-bottom:10px;
-    display:block;
-    text-align:center;
-    color:Black;
-    font-size:250%;
+    margin-top: -25px;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+    color: Black;
+    font-size: 250%;
     font-family: 'Open Sans Condensed';
-    background-color:White;
+    background-color: White;
 }
 .small
 {
-    margin-left:20px;
-    display:block;
-    font-weight:bold;
-    color:Black;
-    font-size:150%;
+    margin-left: 20px;
+    display: block;
+    font-weight: bold;
+    color: Black;
+    font-size: 150%;
     font-family: 'Open Sans Condensed';
-    background-color:White;
+    background-color: White;
 }
 .left
 {
-    display:block;
+    display: block;
     position: relative;
     float: left;
     left: 5px;
@@ -74,7 +75,7 @@
 }
 .galerySource
 {
-    color:#dddddd;
+    color: #dddddd;
 }
 
 .galeryImage
@@ -87,7 +88,7 @@
 }
 .galeryDescription
 {
-    font-size:xx-large;
+    font-size: xx-large;
     font-family: 'Jockey One';
     text-align: left;
     padding-bottom: 5px;
@@ -100,11 +101,7 @@
     border-bottom-style: solid;
     border-bottom-width: thin;
 }
-.imgSuggestion
-{
-    max-width:150px; 
-    max-height: 150px;
-}
+
 .suggestion
 {
     border-radius: 10px;
@@ -112,10 +109,41 @@
     display: block;
     background-color: #F7F7F7;
     border-radius: %5;
-    width: 700px;
-    
+    width: 680px;
+    height:auto;
+    margin-bottom:50px;
+    border:1px solid #d4d4d4;
 }
-.lblSuggestion
+.suggestion .divSuggestion
 {
-    
+    width:210px;
+    display:block;
+    padding: 5px;
+    height: auto;
+    float: left;
 }
+.suggestion .divSuggestion .lblSuggestion
+{
+    font-family: Calibri;
+    color: black;
+    font-size: 15px;
+    display:inherit;
+    text-align:center;
+    margin-right:auto;
+    margin-left:auto;
+    max-width:180px;
+}
+.suggestion .divSuggestion .imgSuggestion
+{
+    max-width:220px;
+    max-height: 120px;
+    margin-right:auto;
+    margin-left:auto;
+    padding:10px 10px 3px 10px;
+    display:block;
+    border: 1px solid #ffffff;
+    text-align:center;
+}
+
+
+
