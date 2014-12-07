@@ -87,6 +87,7 @@
     <Content Include="fotolar\baby.jpg" />
     <Content Include="fotolar\kedi.jpg" />
     <Content Include="Galeri.aspx" />
+    <Content Include="GridLayout\GridLayout.ascx" />
     <Content Include="Style\Galeri\GaleryStyle.css" />
     <Content Include="Kategori.aspx" />
     <Content Include="logo.gif" />
@@ -146,6 +147,12 @@
     </Compile>
     <Compile Include="GALERYHASHTAGS.cs">
       <DependentUpon>NayysEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GridLayout\GridLayout.ascx.cs">
+      <DependentUpon>GridLayout.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="GridLayout\GridLayout.ascx.designer.cs">
+      <DependentUpon>GridLayout.ascx</DependentUpon>
     </Compile>
     <Compile Include="Kategori.aspx.cs">
       <DependentUpon>Kategori.aspx</DependentUpon>
