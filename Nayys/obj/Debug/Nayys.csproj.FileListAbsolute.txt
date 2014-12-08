@@ -1,11 +1,3 @@
-D:\Nayys.git\trunk\Nayys\bin\Nayys.dll
-D:\Nayys.git\trunk\Nayys\bin\Nayys.pdb
-D:\Nayys.git\trunk\Nayys\bin\EntityFramework.dll
-D:\Nayys.git\trunk\Nayys\bin\EntityFramework.SqlServer.dll
-D:\Nayys.git\trunk\Nayys\bin\EntityFramework.xml
-D:\Nayys.git\trunk\Nayys\bin\EntityFramework.SqlServer.xml
-D:\Nayys.git\trunk\Nayys\obj\Debug\Nayys.dll
-D:\Nayys.git\trunk\Nayys\obj\Debug\Nayys.pdb
 C:\Documents and Settings\boyacy\Desktop\Nayys.git\trunk\Nayys\bin\Nayys.dll
 C:\Documents and Settings\boyacy\Desktop\Nayys.git\trunk\Nayys\bin\Nayys.pdb
 C:\Documents and Settings\boyacy\Desktop\Nayys.git\trunk\Nayys\bin\EntityFramework.dll
@@ -15,13 +7,3 @@ C:\Documents and Settings\boyacy\Desktop\Nayys.git\trunk\Nayys\bin\EntityFramewo
 C:\Documents and Settings\boyacy\Desktop\Nayys.git\trunk\Nayys\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\boyacy\Desktop\Nayys.git\trunk\Nayys\obj\Debug\Nayys.dll
 C:\Documents and Settings\boyacy\Desktop\Nayys.git\trunk\Nayys\obj\Debug\Nayys.pdb
-C:\Users\3mr3\Desktop\Projects\Nayys.git\trunk\Nayys\bin\Nayys.dll
-C:\Users\3mr3\Desktop\Projects\Nayys.git\trunk\Nayys\bin\Nayys.pdb
-C:\Users\3mr3\Desktop\Projects\Nayys.git\trunk\Nayys\bin\EntityFramework.dll
-C:\Users\3mr3\Desktop\Projects\Nayys.git\trunk\Nayys\bin\EntityFramework.SqlServer.dll
-C:\Users\3mr3\Desktop\Projects\Nayys.git\trunk\Nayys\bin\EntityFramework.xml
-C:\Users\3mr3\Desktop\Projects\Nayys.git\trunk\Nayys\bin\EntityFramework.SqlServer.xml
-C:\Users\3mr3\Desktop\Projects\Nayys.git\trunk\Nayys\obj\Debug\Nayys.csprojResolveAssemblyReference.cache
-C:\Users\3mr3\Desktop\Projects\Nayys.git\trunk\Nayys\obj\Debug\Nayys.dll
-C:\Users\3mr3\Desktop\Projects\Nayys.git\trunk\Nayys\obj\Debug\Nayys.pdb
-D:\Nayys.git\trunk\Nayys\obj\Debug\ResolveAssemblyReference.cache

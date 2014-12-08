@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Nayys
 {
-    public partial class GridLayout : System.Web.UI.UserControl
+    public partial class Test : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+
         }
     }
 }

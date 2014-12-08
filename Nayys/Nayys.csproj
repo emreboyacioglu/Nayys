@@ -99,6 +99,7 @@
     <Content Include="fotolar\indir.jpg" />
     <Content Include="fotolar\kiraz1.jpg" />
     <Content Include="Style\anasayfa_div\styles.css" />
+    <Content Include="Style\GridLayout\style.css" />
     <Content Include="Style\MasterPage\giftly.png" />
     <Content Include="Style\MasterPage\gplaypattern.png" />
     <Content Include="Style\MasterPage\hexellence.png" />
@@ -107,6 +108,7 @@
     <Content Include="Style\MasterPage\skulls.png" />
     <Content Include="Style\menu\menu_jquery.js" />
     <Content Include="Style\menu\styles.css" />
+    <Content Include="Test.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -150,6 +152,7 @@
     </Compile>
     <Compile Include="GridLayout\GridLayout.ascx.cs">
       <DependentUpon>GridLayout.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="GridLayout\GridLayout.ascx.designer.cs">
       <DependentUpon>GridLayout.ascx</DependentUpon>
@@ -195,6 +198,13 @@
     </Compile>
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>NayysEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
     </Compile>
     <Compile Include="USERS.cs">
       <DependentUpon>NayysEntities.tt</DependentUpon>
